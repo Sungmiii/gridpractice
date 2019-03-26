@@ -1,9 +1,9 @@
 ## CSS Grid layout practice 
 
-This repo practice is following Udemy Advanced CSS & Sass course. \\
+This repo practice is following Udemy Advanced CSS & Sass course. 
 
 ### Note from my coding bible 
-1. Explicit Grid: defined grid \\
+1. Explicit Grid: defined grid 
    Implicit Grid: not defined but created automatically
 
 2. grid-auto-row, grid-auto-column are for implicit Grid
