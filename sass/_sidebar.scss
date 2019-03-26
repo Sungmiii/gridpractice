@@ -5,6 +5,13 @@
 
     display: flex;
     justify-content: center;
+    
+    @include responsive(tabland )  {
+        grid-column: full-start / full-end;
+        grid-row: 1 / 2;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 
 .nav-btn {
@@ -17,6 +24,11 @@
     margin-top: 4rem;
     cursor: pointer;
 
+    @include responsive(tabland )  {
+        margin-top: 0;
+        margin-right: 3rem;
+    }
+
     &::before,
     &::after {
         content: "";
@@ -28,10 +40,17 @@
     }
     &::before {
         transform: translateY(-1.5rem);
+        @include responsive(tabland )  {
+            transform: translateY(-1.2rem);
+        }
+        
     }
 
     &::after {
         transform: translateY(1.3rem);
+        @include responsive(tabland )  {
+            transform: translateY(.9rem);
+        }
     }
 
     

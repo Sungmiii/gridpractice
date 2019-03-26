@@ -1,10 +1,12 @@
+@import 'mixin';
 @import "base";
 @import 'btn';
 @import 'utilities';
 @import "typography";
 
-@import 'layout';
 @import "sidebar";
+@import 'layout';
+
 @import "header";
 @import "realtors";
 @import "features";

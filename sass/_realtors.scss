@@ -4,11 +4,15 @@
     padding: 3rem;
 
     display: grid;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    grid-row-gap: 3rem;
     justify-items: center;
-    
+    grid-row-gap: 2rem;
+
+    @include responsive(tabport) {
+        grid-column: full-start / full-end;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: min-content max-content;
@@ -16,6 +20,21 @@
         
         grid-row-gap: 5vh;
         grid-column-gap: 2rem;
+
+        @include responsive(tabport) {
+            grid-template-columns: repeat(3, min-content max-content);
+            grid-column-gap: 2rem;
+            
+        }
+
+        @include responsive(phoneland) {
+            grid-column-gap: 1rem;
+        }
+
+        @include responsive(phone) {
+            padding: 5rem;
+            grid-template-columns: min-content max-content;
+        }
     }
 
     &__img {
@@ -24,10 +43,10 @@
     width: 8rem;
     display: block;
 
-    }
-    &__details {
+    
 
     }
+    
 
     &__sold {
         text-transform: uppercase;
